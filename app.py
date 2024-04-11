@@ -4,7 +4,9 @@ from requests_cache import CachedSession
 
 app = Flask(__name__)
 Swagger(app)
-session = CachedSession(cache_name='lululemon_cache', backend='sqlite', expire_after=1200)  # Cache for 20 mins
+# Cache for 20 mins. Ideally we would update the cache it on update/delete of the products
+session = CachedSession(cache_name='lululemon_cache', backend='sqlite',
+                        expire_after=1200)
 
 URLS = [
     "https://shop.lululemon.com/c/womens-leggings/_/N-8r6?format=json",

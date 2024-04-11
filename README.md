@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository:
 
-   ```
+   
    git clone https://github.com/rejuna-um/crispy-guacamole.git
    
 ### Install dependencies:
