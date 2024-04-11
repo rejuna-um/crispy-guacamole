@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
    
 ### Install dependencies:
 
-    pip install flask flasgger
+    pip install flask flasgger requests_cache
 
 ### Usage
 Run the Flask application:
