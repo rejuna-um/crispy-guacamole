@@ -31,4 +31,4 @@ Run the Flask application:
 Open your web browser and navigate to http://localhost:5000/apidocs to access the Swagger UI and interact with the API.
 
 ### API Endpoint
-- GET /product-details: Retrieve product details from the Lululemon website for women's leggings and accessories.
+- GET /api/products: Retrieve product details from the Lululemon website for women's leggings and accessories..com/WebScraper/get_product_details

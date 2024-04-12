@@ -1,5 +1,7 @@
+import json
+
 from flasgger import Swagger
-from flask import Flask, jsonify
+from flask import Flask
 from requests_cache import CachedSession
 
 app = Flask(__name__)
@@ -53,7 +55,10 @@ def get_product_details():
                    description: The display name of the product.
     """
     product_details = fetch_product_details()
-    return jsonify(product_details)
+    return {
+        'statusCode': 200,
+        'body': json.loads(json.dumps(product_details, indent = 2))
+    }
 
 
 if __name__ == '__main__':
